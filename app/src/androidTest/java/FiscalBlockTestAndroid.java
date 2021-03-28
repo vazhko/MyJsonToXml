@@ -144,4 +144,11 @@ public class FiscalBlockTestAndroid {
         Log.d(LOG_TAG, "docSubTypeInt = " + docSubTypeInt);
         assertEquals("2", docSubTypeInt);
     }
+
+    @Test
+    public void getDocCalcTest() throws Exception {
+        int docSummInt = fb.calcSumm(sale);
+        Log.d(LOG_TAG, "summ = " + docSummInt);
+        assertEquals(38602, docSummInt);
+    }
 }
